@@ -1,0 +1,83 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillo</title>
+    <link rel="stylesheet" href={%static "main.css"%}>
+
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    
+</head>
+<body>
+    <nav>
+        <div class="container nav_container">
+            <a href="main.htm"><h4>Skillo</h4></a>
+
+            <ul class="nav_menu">
+                <li><a href={%url "dashboard"%}>Home</a></li>
+                <li><a href={%url "about"%}>About</a></li>
+                <li><a href={%url "courses"%}>Courses</a></li>
+                <li><a href={%url "logout" %}  >Log Out</a></li>
+            </ul>
+
+            <button><i class='bx bx-menu'></i></button>
+            <button><i class='bx bx-x'></i></button>
+
+            
+        </div>
+    </nav>
+
+    <!--=================================Navbar ended==============================================-->
+
+    <section class="about_achievement">
+        <div class="container about_achievement_container">
+            <div class="about_achievement_left">
+                <img src={%static "./images/about achievements.svg"%} alt="">
+            </div>
+
+            <div class="about_achievement_right">
+                <h1>Achievements</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae saep
+                e corrupti id nemo cupiditate dicta corporis quod, animi libero, autem ab accusamus tempore iste aliquam velit itaque, 
+                eos possimus et?</p>
+
+                <div class="achievements_cards">
+                    <article class="achievement_cards ">
+                        <span class="achievement_icon">
+                            <i class='bx bx-video'></i>
+                        </span>
+                        <h3>50+</h3>
+                        <p>Courses</p>
+                    </article>
+
+                    <article class="achievement_cards ">
+                        <span class="achievement_icon b">
+                            <i class='bx bx-user'></i>
+                        </span>
+                        <h3>500+</h3>
+                        <p>Students</p>
+                    </article>
+
+                    <article class="achievement_cards ">
+                        <span class="achievement_icon c">
+                            <i class='bx bx-trophy' ></i>
+                        </span>
+                        <h3>50+</h3>
+                        <p>Awards</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>

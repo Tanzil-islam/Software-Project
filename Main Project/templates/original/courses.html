@@ -1,0 +1,337 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillo</title>
+    <link rel="stylesheet" href={%static "main.css"%}>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<style>
+    .courses{
+        margin-top: 1rem;
+    }
+</style>
+    
+</head>
+<body>
+    <nav>
+        <div class="container nav_container">
+            <a href=" "><h4>Skillo</h4></a>
+
+            <ul class="nav_menu">
+                <li><a href={%url "dashboard"%}>Home</a></li>
+                <li><a href={%url "about"%}>About</a></li>
+                <li><a href={%url "courses"%}>Courses</a></li>
+                <li><a href={%url "logout" %}  >Log Out</a></li>
+            </ul>
+
+            <button><i class='bx bx-menu'></i></button>
+            <button><i class='bx bx-x'></i></button>
+
+            
+        </div>
+    </nav>
+
+    <div class="container alpha_container">
+        <ul class="alpha_list">
+            <li><a class="alpha">#</a></li>
+            <li><a class="alpha">A</a></li>
+            <li><a class="alpha">B</a></li>
+            <li><a class="alpha">C</a></li>
+            <li><a class="alpha">D</a></li>
+            <li><a class="alpha">E</a></li>
+            <li><a class="alpha">F</a></li>
+            <li><a class="alpha">G</a></li>
+            <li><a class="alpha">H</a></li>
+            <li><a class="alpha">I</a></li>
+            <li><a class="alpha">J</a></li>
+            <li><a class="alpha">K</a></li>
+            <li><a class="alpha">L</a></li>
+            <li><a class="alpha">M</a></li>
+            <li><a class="alpha">N</a></li>
+            <li><a class="alpha">O</a></li>
+            <li><a class="alpha">P</a></li>
+            <li><a class="alpha">Q</a></li>
+            <li><a class="alpha">R</a></li>
+            <li><a class="alpha">S</a></li>
+            <li><a class="alpha">T</a></li>
+            <li><a class="alpha">U</a></li>
+            <li><a class="alpha">V</a></li>
+            <li><a class="alpha">W</a></li>
+            <li><a class="alpha">X</a></li>
+            <li><a class="alpha">Y</a></li>
+            <li><a class="alpha">Z</a></li>
+        </ul>
+
+    </div>
+
+    
+
+    
+
+
+
+    <section class="courses">
+       
+        <div class="container courses_container">
+            <article class="course">
+                <div class="course_image">
+                    <img src={%static "./images/course1.jpg"%} alt="">
+                </div>
+
+                <div class="course_info">
+
+                    <h4>Responsive Website Design</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+                    porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+                <a href="courses.html" class="btn btn-primary">Learn More</a>
+
+
+                </div>
+
+
+                
+
+
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src={%static "./images/course2.jpg"%} alt="">
+                </div>
+                <div class="course_info">
+                    <h4>Responsive Portfolio design</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+                    porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+                <a href="courses.html" class="btn btn-primary">Learn More</a>
+
+                </div>
+
+
+                
+
+
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src={% static "./images/course3.jpg" %} alt="">
+                </div>
+
+                <div class="course_info">
+                    <h4>Responsive Admin Dashboard Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+                        porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+
+                
+
+
+            </article>
+
+        </article>
+
+        <article class="course">
+            <div class="course_image">
+                <img src={%static "./images/course4.jpg"%} alt="">
+            </div>
+
+            <div class="course_info">
+                <h4>Self Development</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+                    porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+                <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+
+            
+
+
+        </article>
+
+    </article>
+
+    <article class="course">
+        <div class="course_image">
+            <img src={%static "./images/course5.jpg" %} alt="">
+        </div>
+
+        <div class="course_info">
+            <h4>Portfolio Design</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+                porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+            <a href="courses.html" class="btn btn-primary">Learn More</a>
+        </div>
+
+        
+
+
+    </article>
+
+</article>
+
+<article class="course">
+    <div class="course_image">
+        <img src={%static "./images/course6.jpg"%} alt="">
+    </div>
+
+    <div class="course_info">
+        <h4>Social Marketing</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+            porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+        <a href="courses.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    
+
+
+</article>
+
+</article>
+
+<article class="course">
+    <div class="course_image">
+        <img src={%static "./images/course7.jpg"%} alt="">
+    </div>
+
+    <div class="course_info">
+        <h4>UI/UX Design</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+            porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+        <a href="courses.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    
+
+
+</article>
+
+</article>
+
+<article class="course">
+    <div class="course_image">
+        <img src={%static "./images/course8.jpg"%} alt="">
+    </div>
+
+    <div class="course_info">
+        <h4>Cooking</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+            porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+        <a href="courses.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    
+
+
+</article>
+
+</article>
+
+<article class="course">
+    <div class="course_image">
+        <img src={%static "./images/course9.jpg"%} alt="">
+    </div>
+
+    <div class="course_info">
+        <h4>Online Streaming Website</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+            porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+        <a href="courses.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    
+
+
+</article>
+
+</article>
+
+<article class="course">
+    <div class="course_image">
+        <img src={%static "./images/course10.jpg"%} alt="">
+    </div>
+
+    <div class="course_info">
+        <h4>Mobile App Development</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+            porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+        <a href="courses.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    
+
+
+</article>
+
+</article>
+
+<article class="course">
+    <div class="course_image">
+        <img src={%static "./images/course11.jpg"%} alt="">
+    </div>
+
+    <div class="course_info">
+        <h4>Graphics Design</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+            porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+        <a href="courses.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    
+
+
+</article>
+
+</article>
+
+<article class="course">
+    <div class="course_image">
+        <img src={% static "./images/course12.jpg"%} alt="">
+    </div>
+
+    <div class="course_info">
+        <h4>SEO Course</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem dolore 
+            porro sapiente vero repudiandae repellendus asperiores fugiat, nam officia.</p>
+        <a href="courses.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    
+
+
+</article>
+
+        </div>
+
+
+    </section>
+
+
+
+    <script src={% static "./main.js" %}></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
+
+</body>
+</html>
+
